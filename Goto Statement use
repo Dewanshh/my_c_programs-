@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int i=0,num,fact=1;
+    printf("Enter the numbe rto calculate factorial:\n");
+    scanf("%d",&num);
+    
+    l:
+    i++;
+    if(i<=num)
+    {
+        fact=fact*i;
+        goto l;
+    }
+    printf("Factorial of %d is %d",num,fact);
+    return 0;
+    
+}
